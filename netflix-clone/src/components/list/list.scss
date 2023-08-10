@@ -1,0 +1,46 @@
+.list{
+  overflow-x: hidden;
+  margin-top: 10px;
+
+  .listTitle{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+  }
+  .wrapper{
+    position: relative;
+
+    .arrowIcon{
+      color: white;
+      display: flex;
+      font-size: 20px;
+      background-color: rgb(22, 22, 22, 0.5);
+      padding: 5px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 99;
+
+      &.left{
+        left: 0;
+        cursor: pointer;
+      }
+
+      &.right{
+        right: 0;
+        cursor: pointer;
+      }
+    }
+
+    .container{
+      margin-top: 10px; 
+      margin-left: 50px;
+      display:flex;
+      width: max-content;
+      transform: translateX(0);
+      transition: all 1s ease;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@import "../../App.scss";
+
+.Container{
+  display: flex;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  .wrapper{
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    justify-content: space-between;
+    
+    .logoImg{
+      height: 40px;
+      cursor: pointer;
+      margin-right: 30px;
+
+      @include mobile{
+        height:20px;
+      }
+    }
+
+    .right-side{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+    }
+    
+    .rightList1{
+      display: flex;
+      gap: 15px;
+      padding-right: 20px;
+      font-size: 17px;
+      align-items: center;
+      color: white;
+
+      li{
+        cursor: pointer;
+      }      
+
+      li:hover{
+        border-bottom: solid 1px gray;
+      }
+
+      @include tablet{
+        display: none;
+      }
+
+      &.navbarMainLists{
+        @include tablet{
+          display: block;
+        }
+      }
+      
+    }
+
+    .rightList2{
+      display: flex;
+      gap: 15px;
+      padding-right: 20px;
+      font-size: 17px;
+      align-items: center;
+      color: white;
+
+      li{
+        cursor: pointer;
+      }      
+
+      li:hover{
+        border-bottom: solid 1px gray;
+      }
+
+      @include tablet{
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      @include mobile{
+        padding-bottom: 20px;
+
+
+      }
+
+    }
+
+    .showDropDown{
+      position: absolute;
+      background-color: black;
+      opacity: 60%;
+      padding: 20px 25px;
+      border-radius: 10px;
+      top: 72px;
+      right: 30px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .settings{
+        cursor: pointer;
+      }
+      .settings:hover{
+        border-bottom: 1px solid white;
+      }
+
+      .logout{
+        cursor: pointer;
+      }
+      .logout:hover{
+        border-bottom: 1px solid white;
+      }
+      
+    }
+
+  }
+}
+
+
+
+
