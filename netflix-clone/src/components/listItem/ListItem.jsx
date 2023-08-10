@@ -21,7 +21,7 @@ const ListItem = ({item}) => {
   useEffect(()=>{
     const getMovie = async()=>{
       try{
-        const res = await axios.get("http://localhost:5000/movies/find/" + item,  {
+        const res = await axios.get("https://netflix-clone-oycx.onrender.com/movies/find/" + item,  {
           headers :{
             token : `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjYwOGU0YTVhMzdhZTFhYjYzZmRmNyIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY5MTQ3MTcyN30.PI5BRgrG-34JsSjibl-97sXWMd4j_VvIX9-KxYNser4`
           }

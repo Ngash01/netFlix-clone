@@ -38,7 +38,7 @@ const Register = () => {
 }
 
   const registerCall = async()=>{
-    const res = await axios.post("https://netflix-clone-frontend-bo9q.onrender.com/api/auth/register", {name: name, email:email, password: password});
+    const res = await axios.post("https://netflix-clone-oycx.onrender.com/api/auth/register", {name: name, email:email, password: password});
     console.log(res.data)
   }
 
